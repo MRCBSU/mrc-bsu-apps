@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.Rproj.user/
+.Rhistory
+# rsconnect deployment records (CI deploys by app name)
+rsconnect/

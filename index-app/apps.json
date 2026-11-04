@@ -1,0 +1,91 @@
+{
+  "panel1": [
+    {
+      "name": "Prior Elicitation Perianal Crohns",
+      "url": "https://mrc-bsu.shinyapps.io/Prior_elicitation_perianal_Crohns/",
+      "description": ""
+    },
+    {
+      "name": "Likelihood-based method for combining summarized data on multiple genetic variants into a single causal estimate",
+      "url": "https://mrc-bsu.shinyapps.io/summarized/",
+      "description": ""
+    },
+    {
+      "name": "Binary RAR",
+      "url": "https://mrc-bsu.shinyapps.io/binaryRAR/",
+      "description": ""
+    },
+    {
+      "name": "Online sample size and power calculator for Mendelian randomization with a binary outcome",
+      "url": "https://mrc-bsu.shinyapps.io/power/",
+      "description": ""
+    },
+    {
+      "name": "Bias and Type 1 error rate for Mendelian randomization with sample overlap",
+      "url": "https://mrc-bsu.shinyapps.io/overlap/",
+      "description": ""
+    },
+    {
+      "name": "Fieller's Theorem",
+      "url": "https://mrc-bsu.shinyapps.io/fieller/",
+      "description": ""
+    },
+    {
+      "name": "Basket Trial Designs",
+      "url": "https://mrc-bsu.shinyapps.io/BasketTrials/",
+      "description": ""
+    },
+    {
+      "name": "Graph App",
+      "url": "https://mrc-bsu.shinyapps.io/20MRC_BSU_GraphApp/",
+      "description": ""
+    },
+    {
+      "name": "FlashFM",
+      "url": "https://mrc-bsu.shinyapps.io/flashfm-ivis/",
+      "description": ""
+    },
+    {
+      "name": "ACRCalc",
+      "url": "https://mrc-bsu.shinyapps.io/ACRcalc/",
+      "description": ""
+    },
+    {
+      "name": "Online False Discovery Rate Explore",
+      "url": "https://mrc-bsu.shinyapps.io/onlineFDRexplore/",
+      "description": ""
+    },
+    {
+      "name": "Online False Family-Wise Error Rate",
+      "url": "https://mrc-bsu.shinyapps.io/onlineFWERexplore/",
+      "description": ""
+    }
+  ],
+  "panel2": [
+    {
+      "name": "Covid-19 Patient Trajectories",
+      "url": "https://mrc-bsu.shinyapps.io/covid-19-patient-trajectories/",
+      "description": ""
+    },
+    {
+      "name": "Covid-19 Recovery Prediction",
+      "url": "https://mrc-bsu.shinyapps.io/covid-19-systemic-recovery-prediction-app/",
+      "description": ""
+    },
+    {
+      "name": "Covid-19 School Reopening Predictions",
+      "url": "https://mrc-bsu.shinyapps.io/covid-19-school-reopening-app/",
+      "description": ""
+    },
+    {
+      "name": "Covid-19 48Hr Mortality Predictor",
+      "url": "https://mrc-bsu.shinyapps.io/MortalityRisk48Hours/",
+      "description": ""
+    },
+    {
+      "name": "a2bCovid, a tool to identify the likelihood of Covid transmission from one person to another",
+      "url": "https://mrc-bsu.shinyapps.io/a2bcovid/",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.navbar{
+  background-color: "#e4f3ef";
+}
+
+a {
+  margin-bottom: 5px;
+}
+
+a:visited {
+  color: #223453;
+  text-decoration-color: magenta;
+}

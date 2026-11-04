@@ -1,0 +1,36 @@
+# Runs on every pull request that touches the app list.
+# Checks apps.json is valid and that any newly added app URL returns 200 OK.
+# This workflow gets no secrets, so it is safe to run on anyone's pull request.
+name: Check app index
+
+on:
+  pull_request:
+    paths:
+      - "index-app/apps.json"
+      - "add_app.py"
+      - "validate_index.py"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Get the current app list from the target branch
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git show "origin/$BASE_REF:index-app/apps.json" > /tmp/base-apps.json \
+            || echo '{}' > /tmp/base-apps.json
+
+      - name: Validate and check new URLs
+        run: python validate_index.py index-app/apps.json --base /tmp/base-apps.json
