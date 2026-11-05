@@ -37,7 +37,7 @@ def parse_args():
     p = argparse.ArgumentParser(
         description="Add an app to the organisation's Shiny app index and republish it."
     )
-    p.add_argument("--panel", required=True, choices=PANELS,
+    p.add_argument("--panel", choices=PANELS, default="panel1",
                    help="Which panel of the index app the new entry goes in.")
     p.add_argument("--name", required=True, help="Display name of the app.")
     p.add_argument("--url", required=True, help="Where the app lives.")

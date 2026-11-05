@@ -54,6 +54,11 @@
       "name": "Online False Family-Wise Error Rate",
       "url": "https://mrc-bsu.shinyapps.io/onlineFWERexplore/",
       "description": "False family-wise error rate tool"
+    },
+    {
+      "name": "shiny-test",
+      "url": "https://mrc-bsu.shinyapps.io/shiny-test/",
+      "description": "this is but only a test"
     }
   ],
   "panel2": [
