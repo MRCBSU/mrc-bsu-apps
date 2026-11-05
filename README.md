@@ -25,3 +25,9 @@ The checks on your pull request confirm the list is valid and your URL is live.
 Once it's approved and merged, the index page is republished within a few minutes.
 
 You can also edit `index-app/apps.json` directly instead of running the script.
+
+## Removing an old App
+
+1. Create a branch
+2. Edit the apps.json file to remove the app information, please include the curly braces as well.
+3. Commit, push and open a pull request.
