@@ -5,7 +5,7 @@ The index app reads its list of apps from a JSON file inside the app
 directory (apps.json by default), shaped like:
 
     {
-      "panel1": [{"name": ..., "url": ..., "description": ..., "added": ...}],
+      "panel1": [{"name": ..., "url": ..., "description": ...}],
       "panel2": [...]
     }
 
