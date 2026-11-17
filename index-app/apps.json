@@ -1,91 +1,86 @@
 {
   "panel1": [
     {
-      "name": "Prior Elicitation Perianal Crohns",
-      "url": "https://mrc-bsu.shinyapps.io/Prior_elicitation_perianal_Crohns/",
-      "description": ""
-    },
-    {
-      "name": "Likelihood-based method for combining summarized data on multiple genetic variants into a single causal estimate",
+      "name": "Likelihood-based combination",
       "url": "https://mrc-bsu.shinyapps.io/summarized/",
-      "description": ""
+      "description": "Likelihood-based method for combining summarized data on multiple genetic variants into a single causal estimate"
     },
     {
       "name": "Binary RAR",
       "url": "https://mrc-bsu.shinyapps.io/binaryRAR/",
-      "description": ""
+      "description": "Binary response-adaptive random allocation "
     },
     {
-      "name": "Online sample size and power calculator for Mendelian randomization with a binary outcome",
+      "name": "Mendelian randomisation",
       "url": "https://mrc-bsu.shinyapps.io/power/",
-      "description": ""
+      "description": "Online sample size and power calculator for Mendelian randomization with a binary outcom"
     },
     {
-      "name": "Bias and Type 1 error rate for Mendelian randomization with sample overlap",
+      "name": "Overlap",
       "url": "https://mrc-bsu.shinyapps.io/overlap/",
-      "description": ""
+      "description": "Bias and Type 1 error rate for Mendelian randomization with sample overlap"
     },
     {
       "name": "Fieller's Theorem",
       "url": "https://mrc-bsu.shinyapps.io/fieller/",
-      "description": ""
+      "description": "Fieller's Theorem"
     },
     {
       "name": "Basket Trial Designs",
       "url": "https://mrc-bsu.shinyapps.io/BasketTrials/",
-      "description": ""
+      "description": "Allow the design and analysis of basket trials that simultaneously compare a new treatment with a control in various patient subgroups"
     },
     {
       "name": "Graph App",
       "url": "https://mrc-bsu.shinyapps.io/20MRC_BSU_GraphApp/",
-      "description": ""
+      "description": "Interactive graph app that implements graphical approach to multiple testing"
     },
     {
       "name": "FlashFM",
       "url": "https://mrc-bsu.shinyapps.io/flashfm-ivis/",
-      "description": ""
+      "description": "Interactive visualisation for fine-mapping of multiple quantitative traits."
     },
     {
       "name": "ACRCalc",
       "url": "https://mrc-bsu.shinyapps.io/ACRcalc/",
-      "description": ""
+      "description": "Calculates the ACR Ped-Score based on the changes between t6 and t0 in 6 core variables"
     },
     {
       "name": "Online False Discovery Rate Explore",
       "url": "https://mrc-bsu.shinyapps.io/onlineFDRexplore/",
-      "description": ""
+      "description": "False discovery rate tool"
     },
     {
       "name": "Online False Family-Wise Error Rate",
       "url": "https://mrc-bsu.shinyapps.io/onlineFWERexplore/",
-      "description": ""
+      "description": "False family-wise error rate tool"
     }
   ],
   "panel2": [
     {
       "name": "Covid-19 Patient Trajectories",
       "url": "https://mrc-bsu.shinyapps.io/covid-19-patient-trajectories/",
-      "description": ""
+      "description": "Attempts to predict patient trajectories for either recovery or deterioration following COVID-19 infection."
     },
     {
       "name": "Covid-19 Recovery Prediction",
       "url": "https://mrc-bsu.shinyapps.io/covid-19-systemic-recovery-prediction-app/",
-      "description": ""
+      "description": "Predicts rough estimates of recovery timetables for COVID-19"
     },
     {
       "name": "Covid-19 School Reopening Predictions",
       "url": "https://mrc-bsu.shinyapps.io/covid-19-school-reopening-app/",
-      "description": ""
+      "description": "Predicts time to reopen schools following COVID-19 infections."
     },
     {
       "name": "Covid-19 48Hr Mortality Predictor",
       "url": "https://mrc-bsu.shinyapps.io/MortalityRisk48Hours/",
-      "description": ""
+      "description": "48 Hour mortality prediction of COVID-19 infections."
     },
     {
-      "name": "a2bCovid, a tool to identify the likelihood of Covid transmission from one person to another",
+      "name": "a2bCovid",
       "url": "https://mrc-bsu.shinyapps.io/a2bcovid/",
-      "description": ""
+      "description": "A tool to identify the likelihood of COVID-19 transmission from one person to another"
     }
   ]
 }

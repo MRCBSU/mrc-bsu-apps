@@ -1,12 +1,3 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    https://shiny.posit.co/
-#
-
 library(shiny)
 library(bslib)
 library(thematic)
@@ -15,35 +6,29 @@ thematic::thematic_on()
 imageToggle <- '<script type="text/javascript">
   const toggler = document.getElementsByTagName("button");
   const navImage = document.querySelector("#navImage");
-  
-  toggler.addEventListener("click", function(e){
-    console.log("hello from toggler")
   })
   </script>
   '
-# The list of apps lives in apps.json (updated by add_app.py).
-# It is read once when the app starts; republishing restarts the app.
+
 apps <- jsonlite::read_json("apps.json")
 
 app_links <- function(panel) {
-  div(style="display: flex; flex-direction: column; margin:0 12.5%",
-    lapply(apps[[panel]], function(app) {
-      link <- a(app$name, href=app$url)
-      if (!is.null(app$description) && nzchar(app$description)) {
-        tagList(link, tags$small(class="text-muted", style="margin-bottom: 10px;", app$description))
-      } else {
-        link
-      }
-    })
-  )
+  div(style = "display: flex; flex-direction: column; margin:0 12.5%", lapply(apps[[panel]], function(app) {
+    link <- a(app$name, href = app$url)
+    if (!is.null(app$description) && nzchar(app$description)) {
+      tagList(
+        link,
+        tags$small(class = "text-muted", style = "margin-bottom: 10px;", app$description)
+      )
+    } else {
+      link
+    }
+  }))
 }
 
-# Define UI for application that draws a histogram
 ui <- page_navbar(
-  title="MRC BSU Shiny Apps Index",
-  tags$head(
-    tags$style(
-      "a {
+  title = "MRC BSU Shiny Apps Index",
+  tags$head(tags$style("a {
         margin-bottom: 5px;
       }"
     )
@@ -62,12 +47,19 @@ ui <- page_navbar(
     h3("Below is an index of Shiny applications developed by researchers at the MRC BSU at Cambridge University.", align="center"),
     app_links("panel1")
   ),
-  nav_panel(title="Covid-19 Support",
-    img(id="header_image", src="images/bsu_cam_logo_ukri.png",
-        width="50%", style="align-self:center;"),
-    h3("BSU Support during the Covid-19 Pandemic", align="center"),
-    p('These applications are no longer being actively worked on, but showcase our collective efforts in leveraging predictive analysis to combat the Covid-19 pandemic.',
-      style="font-size:12px; width:75%; align-self:center;"),
+  nav_panel(
+    title = "Covid-19 Support",
+    img(
+      id = "header_image",
+      src = "images/bsu_cam_logo_ukri.png",
+      width = "50%",
+      style = "align-self:center;"
+    ),
+    h3("BSU Support during the Covid-19 Pandemic", align = "center"),
+    p(
+      'These applications are no longer being actively worked on, but showcase our collective efforts in leveraging predictive analysis to combat the Covid-19 pandemic.',
+      style = "font-size:12px; width:75%; align-self:center;"
+    ),
     app_links("panel2")
   ),
   nav_spacer(),
@@ -97,5 +89,4 @@ server <- function(input, output) {
   
 }
 
-# Run the application 
 shinyApp(ui = ui, server = server)
