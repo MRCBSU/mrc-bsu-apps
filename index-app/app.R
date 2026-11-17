@@ -1,5 +1,6 @@
 library(shiny)
 library(bslib)
+library(thematic)
 
 thematic::thematic_on()
 imageToggle <- '<script type="text/javascript">
@@ -29,36 +30,21 @@ ui <- page_navbar(
   title = "MRC BSU Shiny Apps Index",
   tags$head(tags$style("a {
         margin-bottom: 5px;
-      }")),
-  theme = bs_theme(version = 5, bootswatch = "minty"),
-  nav_item(
-    a(
-      href = "https://www.mrc-bsu.cam.ac.uk/",
-      class = "navImageLink",
-      style = "text-decoration: none;",
-      img(
-        id = "navImage",
-        src = "images/mrc_bsu_white_text_rgb_80px_c_002.png",
-        type = "image/png",
-        width = "150px"
-      )
+      }"
     )
   ),
+  theme=bs_theme(version = 5, bootswatch = "minty"),
   nav_panel(
-    title = "MRC BSU Applications",
-    img(
-      id = "headerImage",
-      src = "images/bsu_cam_logo_ukri.png",
-      width = "50%",
-      style = "align-self:center;"
-    ),
-    h3(
-      "Below is an index of Shiny applications developed by researchers at the MRC BSU at Cambridge University.",
-      align = "center",
-    ),
-    HTML(
-      '<p style="font-size:12px; width:75%; align-self:center;">If you encounter any problems with any of the apps, please contact <a href="mailto:bsu.software@mrc-bsu.cam.ac.uk">bsu.software@mrc-bsu.cam.ac.uk</a> provide a thorough description of the issue, the application you are having issues with, your name, the date and time of the issue, and we will correct it as soon as we are able to.</p>'
-    ),
+    title="MRC BSU Applications",
+    a(href="https://www.mrc-bsu.cam.ac.uk/",
+    class="navImageLink",
+    style="text-decoration: none;",
+    img(id="headerImage",
+      src="images/bsu_cam_logo_ukri.png",
+        width="50%",
+        style="align-self:center;")
+        ),
+    h3("Below is an index of Shiny applications developed by researchers at the MRC BSU at Cambridge University.", align="center"),
     app_links("panel1")
   ),
   nav_panel(
@@ -79,15 +65,26 @@ ui <- page_navbar(
   nav_spacer(),
   nav_item(
     p(
-      icon("copyright"),
-      "2024 Cambridge University",
-      align = "center",
-      style = "font-size: 10px; margin:auto;"
-    )
-  ),
-  
+      icon("copyright"), 
+      paste(format(Sys.Date(), "%Y"), " Cambridge University"), 
+      align="center", style="font-size: 10px; margin:auto;")
+    ),
+  # nav_item(
+  #   input_dark_mode(id ="mode", mode="light"),
+  #   textOutput("mode")
+  # ),
+  # tags$body(
+  #   tags$script(type="text/javascript",
+  #     'const toggleButton = $("button")[0];
+  #     console.log(toggleButton.attributes)
+  #     toggleButton.addEventListener("click", function(e){
+  #       console.log(e);
+  #     }, false);'
+  #   )
+  # )
+  footer = HTML('<footer style="font-size:12px; width:75%; align-self:center;">If you encounter any problems with any of the apps, please contact <a href="mailto:bsu.software@mrc-bsu.cam.ac.uk">bsu.software@mrc-bsu.cam.ac.uk</a> provide a thorough description of the issue, the application you are having issues with, your name, the date and time of the issue, and we will correct it as soon as we are able to.</footer>')
 )
-
+# Define server logic required to draw a histogram
 server <- function(input, output) {
   
 }
