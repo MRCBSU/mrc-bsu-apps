@@ -28,6 +28,7 @@ app_links <- function(panel) {
 
 ui <- page_navbar(
   title = "MRC BSU Shiny Apps Index",
+  fillable=FALSE,
   tags$head(tags$style("a {
         margin-bottom: 5px;
       }"
