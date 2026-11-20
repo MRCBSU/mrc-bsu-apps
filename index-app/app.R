@@ -83,7 +83,7 @@ ui <- page_navbar(
   #     }, false);'
   #   )
   # )
-  footer = HTML('<footer style="font-size:12px; width:75%; align-self:center;">If you encounter any problems with any of the apps, please contact <a href="mailto:bsu.software@mrc-bsu.cam.ac.uk">bsu.software@mrc-bsu.cam.ac.uk</a> provide a thorough description of the issue, the application you are having issues with, your name, the date and time of the issue, and we will correct it as soon as we are able to.</footer>')
+  footer = HTML('<footer style="font-size:12px; width:100%; text-align:center;">If you encounter any problems with any of the apps, please contact <a href="mailto:bsu.software@mrc-bsu.cam.ac.uk">bsu.software@mrc-bsu.cam.ac.uk</a> provide a thorough description of the issue, the application you are having issues with, your name, the date and time of the issue, and we will correct it as soon as we are able to.</footer>')
 )
 # Define server logic required to draw a histogram
 server <- function(input, output) {
