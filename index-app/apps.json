@@ -54,6 +54,12 @@
       "name": "Online False Family-Wise Error Rate",
       "url": "https://mrc-bsu.shinyapps.io/onlineFWERexplore/",
       "description": "False family-wise error rate tool"
+    },
+    {
+      "name": "KnAPPsack",
+      "url": "https://mrc-bsu.shinyapps.io/knapsack/",
+      "description": "This shiny app calculates rejection indicators for the Average Power Knapsack (APK) test in Baas et al. (2025), as well as p-values for Fisher’s exact test, Berger and Boos’ Fisher’s mid-p-value test and Berger and Boos’ Z-pooled test. In addition, it provides a comparison of maximum type I error rates and average/pointwise power.",
+      "added": "2026-11-20"
     }
   ],
   "panel2": [
